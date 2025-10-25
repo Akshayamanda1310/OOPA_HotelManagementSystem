@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Stay</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="book.html">Book Room</a>
+      <a href="cancel.html">Cancel Booking</a>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <form id="bookingForm">
+      <label>Guest Name:</label>
+      <input type="text" id="guestName" required>
+
+      <label>Phone:</label>
+      <input type="text" id="phone" required>
+
+      <label>ID Proof:</label>
+      <input type="text" id="idProof" required>
+
+      <label>Room Type:</label>
+      <select id="roomType">
+        <option value="STANDARD">Standard</option>
+        <option value="DELUXE">Deluxe</option>
+        <option value="SUITE">Suite</option>
+      </select>
+
+      <label>Check-in Date & Time:</label>
+      <input type="datetime-local" id="checkIn" required>
+
+      <label>Check-out Date & Time:</label>
+      <input type="datetime-local" id="checkOut" required>
+
+      <button type="submit" class="btn">Confirm Booking</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
